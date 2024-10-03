@@ -6,6 +6,7 @@ def Pareto(*pairs):
                 break
         else:
             res.append(x)
-    return tuple(res)
+            print(res)
+    return tuple(res) if len(res)>1 else (res[0])
 
-print(Pareto(eval(input())))
+print(Pareto(*eval(input())))
