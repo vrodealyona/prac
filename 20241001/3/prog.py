@@ -9,4 +9,4 @@ def Calc(s, t, u):
 
 st = eval(input())
 F = Calc(st[0], st[1], st[2])
-print(F(float(input())))
+print(F(eval(input())))
