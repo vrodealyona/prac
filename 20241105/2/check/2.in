@@ -1,0 +1,6 @@
+t1 = Triangle((0, 5), (5, 0), (-5, 0))
+t2 = Triangle((5, 1), (-5, 1), (0, -5))
+print(f"t1({bool(t1)}):{round(abs(t1), 3)}, t2({bool(t2)}):{round(abs(t2), 3)}")
+print(f"{t1 < t2 =}, {t2 < t1 =}")
+print(f"{t1 in t2 = }, {t2 in t1 = }, {t1 in t1 = }")
+print(f"{t1 & t2 = }, {t1 & t1 = }, {t2 & t2 = }")
