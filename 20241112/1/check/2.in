@@ -1,0 +1,4 @@
+empty = DivStr()
+print(list(empty // 1))
+print(empty % 1)
+print(empty % 5)

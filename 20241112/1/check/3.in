@@ -1,0 +1,5 @@
+a = DivStr("abc def! ghi? jkl")
+print(list(a // 5))
+print(a % 3)
+print(list(a // 1))
+print(a % 1)
