@@ -1,0 +1,18 @@
+import time
+repetitions = 10**5
+
+start_alpha = time.time()
+for _ in range(repetitions):
+    alp = Alpha(a=1, z=26, m=13)
+    alp.x = 42
+    _ = alp.x
+alpha_time = time.time() - start_alpha
+
+start_alphaq = time.time()
+for _ in range(repetitions):
+    alq = AlphaQ(a=1, z=26, m=13)
+    alq.x = 42
+    _ = alq.x
+alphaq_time = time.time() - start_alphaq
+
+print("Who is faster?:", "Alpha" if alpha_time < alphaq_time else "AlphaQ")

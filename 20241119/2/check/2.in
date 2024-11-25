@@ -1,0 +1,5 @@
+class C:
+    num = Num()
+
+c = C()
+print(c.num)  # Ожидается 0

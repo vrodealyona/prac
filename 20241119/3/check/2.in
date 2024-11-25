@@ -1,0 +1,21 @@
+alp = Alpha(a=1, z=26, m=13)
+alq = AlphaQ(a=1, z=26, m=13)
+print(alp) #a: 1, m: 13, z: 26
+print(alq) #a: 1, m: 13, z: 26
+alp.b = 2
+alq.b = 2
+print(alp.b, alq.b) # 2 2
+
+try:
+   alp.invalid_field = 100
+except AttributeError as e:
+   print("Caught AttributeError for Alpha as expected:", e)
+try:
+   alq.invalid_field = 100
+except AttributeError as e:
+   print("Caught AttributeError for AlphaQ as expected:", e)
+
+alp.c = 3
+alq.c = 3
+print(alp) #a: 1, b: 2, c: 3, m: 13, z: 26
+print(alq) #a: 1, b: 2, c: 3, m: 13, z: 26
