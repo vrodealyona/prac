@@ -23,5 +23,5 @@ else:
 
 parts = sorted(parts)
 output = input_data[0:1] + b"".join(parts)
-output = output.replace(b"\n", b"").replace(b"\r", b"")
+output = output.replace(b"\n", b"", 1).replace(b"\r", b"")
 sys.stdout.buffer.write(output)
