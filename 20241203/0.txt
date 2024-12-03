@@ -1,0 +1,18 @@
+C = type("C", () , {"f":123, "__init__": lambda self, x: setattr(self, "var", x), "var": 100500})
+C
+C.f
+################
+t = b"qwqweqwe"
+match t.split():
+    case []:
+        print("empty")
+    case ["qwe"]:
+        print("No doubt qwe")
+    case [str(x)]:
+        print("List of 1 str")
+    case [x]:
+        print("A list of 1")
+
+        
+A list of 1
+###############
