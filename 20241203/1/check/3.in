@@ -1,0 +1,11 @@
+class E(metaclass=dump):
+    def __init__(self, val: int):
+        self.val = val
+
+    def add(self, other: int, another: float=None):
+        return self.val + other + (another or self.val)
+
+e = E(10)
+print(e.add(9))
+print(e.add(9, 10.5))
+print(e.add(9, another=10.5))

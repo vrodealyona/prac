@@ -1,0 +1,15 @@
+hsfufu
+        store 3 i
+        store 1 I
+        store 1 f
+
+    out I
+    out i 
+ifne i I loop
+check: stop
+loop: out I
+      out i 
+    add I f I
+    ifne i I loop
+    ifeq i I check
+    out I

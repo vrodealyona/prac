@@ -1,0 +1,11 @@
+class D(metaclass=dump):
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def mul(self, c, d=2):
+        return self.a * self.b * c * d
+
+d = D(3, 5)
+print(d.mul(10))
+print(d.mul(2, d = 10))
