@@ -65,10 +65,7 @@ def build(gas, water, total):
 
 def fun():
     cont = []
-    while True:
-        line = input()
-        if not line:
-            break
+    while (line := input()):
         line = line.strip()
         cont.append(list(line))
 
