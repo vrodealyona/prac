@@ -1,5 +1,5 @@
 random.seed(42)
-A = random.choices(range(10), k=0)
+A = random.choices(range(10), k=1)
 B = asyncio.run(main(A))
 print(*A)
 print(*B)
