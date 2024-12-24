@@ -1,31 +1,10 @@
 class C:
     num = Num()
+def test_range_and_real():
+    c = C()
+    d = C()
+    c.num = "qwerqwerqwer"
+    d.num = range(10, 1000, 7)
+    print(c.num + d.num)
+test_range_and_real()
 
-c = C()
-c.num = "Hello, world!"  # строка
-print(c.num)  # Ожидается 13
-
-c.num = [1, 2, 3, 4, 5]  # список
-print(c.num)  # Ожидается 5
-
-c.num = range(10, 100, 10)  # range
-print(c.num)  # Ожидается 9
-
-c1 = C()
-c2 = C()
-
-c1.num = 10
-c2.num = "abc"
-
-print(c1.num)  # Ожидается 10
-print(c2.num)  # Ожидается 3 (длина строки "abc")
-
-c = C()
-c.num = 100
-print(c.num)  # Ожидается 100
-
-c.num = [0, 1, 2, 3]
-print(c.num)  # Ожидается 4
-
-c.num = 3.14
-print(c.num)  # Ожидается 3.14

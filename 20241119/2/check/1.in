@@ -1,10 +1,11 @@
 class C:
-  num = Num()
-print(C().num)
-c, d = C(), C()
-c.num = d.num = 2
-print(c.num+d.num)
-c.num = "qwerqwerqwer"
-print(c.num+d.num)
-d.num = range(10, 1000, 7)
-print(c.num+d.num)
+    num = Num()
+def test_default_and_basic():
+    c = C()
+    d = C()
+    print(c.num)  # Ожидается 0 (значение по умолчанию)
+    c.num = 2
+    d.num = 2
+    print(c.num + d.num)  # Ожидается 4
+test_default_and_basic()
+
