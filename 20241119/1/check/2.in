@@ -2,16 +2,13 @@
 class B:
     def __init__(self, name):
         self.name = name
-
     def __del__(self):
         print(f"Deleting {self.name}")  # Дополнительное действие при удалении
-
 b1 = B("Object1")
 b2 = B("Object2")
 print(B.counter)  # Ожидается 2
-
 del b1  # Удаляем объект, должно быть сообщение и уменьшение счётчика
 print(B.counter)  # Ожидается 1
-
 del b2
 print(B.counter)  # Ожидается 0
+

@@ -2,27 +2,22 @@
 class D:
     def __init__(self, name):
         self.name = name
-
     def __del__(self):
         print(f"Deleting {self.name}")
-
 @objcount
 class E:
     def __init__(self, age):
         self.age = age
-
 d1 = D("Object1")
 d2 = D("Object2")
 e1 = E(30)
 e2 = E(40)
 print(D.counter, E.counter)  # Ожидается 2, 2
-
 del d1
 print(D.counter, E.counter)  # Ожидается 1, 2
-
 del e2
 print(D.counter, E.counter)  # Ожидается 1, 1
-
 del d2
 del e1
 print(D.counter, E.counter)  # Ожидается 0, 0
+
